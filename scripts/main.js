@@ -28,9 +28,6 @@ function setUserName() {
 }
 if (!localStorage.getItem('name')){
     setUserName();
-}else{
-    var storedName = localStorage.getItem('name');
-    for_user.innerHTML = 'Nice to meet you, ' + storedName;
 }
 changeUserButton.onclick = function () {
     setUserName();
