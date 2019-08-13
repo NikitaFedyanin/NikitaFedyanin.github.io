@@ -22,13 +22,16 @@ img.onclick = function () {
 };
 
 function setUserName() {
-    var myName = prompt('Please enter your name');
-    localStorage.setItem('name', myName);
-    for_user.innerHTML = 'Nice to meet you, ' + myName;
+    var myName = prompt('Пожалуйста введите имя для приветствия');
+    if (myName !== 'null') {
+        localStorage.setItem('name', myName);
+        for_user.innerHTML = 'Nice to meet you, ' + myName;
+    }
 }
-if (localStorage.getItem('name') === 'null'){
+if (!localStorage.getItem('name')){
     setUserName();
 }
+
 changeUserButton.onclick = function () {
     setUserName();
 };
