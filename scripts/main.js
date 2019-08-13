@@ -23,14 +23,19 @@ img.onclick = function () {
 
 function setUserName() {
     var myName = prompt('Пожалуйста введите имя для приветствия');
-    if (myName !== 'null') {
+    if (myName !== null) {
         localStorage.setItem('name', myName);
         for_user.innerHTML = 'Nice to meet you, ' + myName;
     }
 }
-if (!localStorage.getItem('name')){
+if (localStorage.getItem('name') !== null){
+    for_user.innerHTML = 'Nice to meet you, ' + localStorage.getItem('name');
+}
+else{
+    localStorage.removeItem('name');
     setUserName();
 }
+
 
 changeUserButton.onclick = function () {
     setUserName();
