@@ -1,0 +1,38 @@
+html{
+    background-color: #98FB98;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FFA500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 520px;
+    height: 350px;
+}
+.close_meeting{
+    position: relative;
+    margin-left: 400px;
+    bottom: 45px;
+
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 10px 0;
+    color: #00539F;
+    text-shadow: 2px 2px 2px black;
+}
+p{
+    font-size: 18px;
+}
+ul{
+    line-height: 25px;
+}
