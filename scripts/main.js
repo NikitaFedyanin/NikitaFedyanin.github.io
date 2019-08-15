@@ -29,14 +29,14 @@ img.onclick = function () {
 // добавление переменной name в localstorage
 function setUserName() {
     var myName = prompt('Пожалуйста введите имя для приветствия');
-    if (myName !== null) {
+    if (myName !== null && myName !== '') {
         localStorage.setItem('name', myName);
-        for_user.innerHTML = 'Nice to meet you, ' + myName;
+        for_user.innerHTML = 'Приветствую, ' + myName;
         closeMeeting.title = 'Закрыть приветствие'
     }
 }
 if (localStorage.getItem('name') !== null){
-    for_user.innerHTML = 'Nice to meet you, ' + localStorage.getItem('name');
+    for_user.innerHTML = 'Приветствую, ' + localStorage.getItem('name');
     closeMeeting.title = 'Закрыть приветствие'
 }
 else{
