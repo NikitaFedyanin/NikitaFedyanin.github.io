@@ -7,39 +7,82 @@
     <title>Моя тестовая страница</title>
     <link rel="stylesheet" href="style/style.css" type="text/css">
     <link rel="title icon" href="images/smoke.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap">
 </head>
 <body>
-<h1>Тестовая страница для обучения web разработке</h1>
-<h2></h2>
-<button class="close_meeting" title="Закрыть приветствие">[X]</button>
-<img alt="Изображение кота" src="images/dlinnye-foto-4.jpg" title="Это горы">
-<p>Навигация по сайту:</p>
-<ul class="navigation">
-    <li><a href="pages/recept.html">Рецепт хумуса на английском</a></li>
-    <li><a href="pages/internet_shop.html">Интернет-магазин</a></li>
-    <li><a href="pages/university_letter.html">Письмо университета (Задание на разметку)</a></li>
-</ul>
-<dl>
-    <dt>
-        <strong>Немного описания:</strong>
-    </dt>
-    <dd>
-        Изучение веб программирования сильно отличается от изучения таких языков, как python, Java, C++ и
-        т.д.. В нем придеться сочетать знание синтаксиса кода, логики программирования и чувство стиля. После долгих поисков
-        я нашёл хороший источник для его изучения и эта страница является моим первым опытом.
-    </dd>
-</dl>
-<p>Три "кита" веб программирования:</p>
-<ul class="web_programs_consists">
-    <li><abbr title="Hypertext Markup Language">HTML</abbr> верстка</li>
-    <li><abbr title="Cascading Style Sheets">CSS</abbr> стили</li>
-    <li>JavaScript интерактивность</li>
-</ul>
-<p>Хочешь тоже научиться? <a class="my_link" href="https://developer.mozilla.org/ru/docs/Learn"><u>Обучение web:)</u></a></p>
-<p><a href="https://developer.mozilla.org/ru/docs/Learn/HTML/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_HTML/Structuring_a_page_of_content">Моя закладка</a></p>
-<button class="change_user">ChangeUser</button>
+<header>
+    <h1>The way to WEB-programming</h1>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="pages/recept.html">
+                <button>Хумус</button>
+            </a></li>
+            <li><a href="pages/university_letter.html">
+                <button>Письмо</button>
+            </a></li>
+            <li><a href="pages/internet_shop.html">
+                <button>Магазин</button>
+            </a></li>
+            <li><a href="pages/birds/index.html">
+                <button>Птицы</button>
+            </a></li>
+        </ul>
+    </nav>
+</section>
+
+<main>
+    <article>
+        <h2>Что такое WEB-программирование</h2>
+        <p>Веб-программирование — раздел программирования, ориентированный на
+            разработку веб-приложений (программ, обеспечивающих функционирование динамических сайтов
+            Всемирной паутины).</p>
+        <p>Три "кита" веб - программирования</p>
+        <ul>
+            <li>HTML - язык разметки</li>
+            <li>CSS - язык стилей</li>
+            <li>JavaScript - интерактивность страницы</li>
+        </ul>
+        <dl>
+            <dt><abbr title="Hypertext Markup Language">HTML</abbr></dt>
+            <dd>
+                Язык гипертекстовой разметки HTML был разработан британским учёным Тимом Бернерсом-Ли приблизительно в
+                1986—1991 годах в стенах ЦЕРНа в Женеве в Швейцарии. HTML создавался как язык для обмена научной и
+                технической документацией, пригодный для использования людьми, не являющимися специалистами в области
+                вёрстки. HTML успешно справлялся с проблемой сложности SGML путём определения небольшого набора
+                структурных и семантических элементов — дескрипторов. Дескрипторы также часто называют «тегами». С
+                помощью HTML можно легко создать относительно простой, но красиво оформленный документ. Помимо упрощения
+                структуры документа, в HTML внесена поддержка гипертекста. Мультимедийные возможности были добавлены
+                позже.
+
+                Изначально язык HTML был задуман и создан как средство структурирования и форматирования документов без
+                их привязки к средствам воспроизведения (отображения). В идеале, текст с разметкой HTML должен был без
+                стилистических и структурных искажений воспроизводиться на оборудовании с различной технической
+                оснащённостью (цветной экран современного компьютера, монохромный экран органайзера, ограниченный по
+                размерам экран мобильного телефона или устройства и программы голосового воспроизведения текстов).
+                Однако современное применение HTML очень далеко от его изначальной задачи. Например, тег
+               предназначен для создания в документах таблиц, но иногда используется и для оформления
+                    размещения элементов на странице. С течением времени основная идея платформонезависимости языка HTML
+                    была принесена в жертву современным потребностям в мультимедийном и графическом оформлении.
+            </dd>
+        </dl>
+    </article>
+    <aside>
+        <h2>Немного интересного</h2>
+        <p>Пока тут кот</p>
+        <img src="images/cat.jpeg" title="Котяра">
+    </aside>
+</main>
+
+<div class="main_div">
+    <div class="left_down">
+        <p>Первый поддив</p>
+    </div>
+    <div class="right_down">
+        <p>Второй поддив</p>
+    </div>
+</div>
 <script src="scripts/main.js"></script>
 </body>
 </html>
