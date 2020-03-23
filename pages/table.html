@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+</head>
+
+<body>
+    <a href="../index.html">На главную</a><br>
+    <h1>Построение таблицы</h1>
+    <table border="1">
+        <caption>Заголовок таблицы</caption>
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Возраст</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Алексей</td>
+                <td>Иванов</td>
+                <td>15</td>
+                <td rowspan="5">Самая большая ячейка</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>Кузьмина</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ячейка на 2 поля</td>
+                <td colspan="2">Ячейка на 2 поля</td>
+            </tr>
+            <tr>
+                <td colspan="2">Ячейка на 2 поля</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Самая большая ячейка</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

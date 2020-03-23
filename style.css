@@ -1,0 +1,77 @@
+body{
+    margin: 0; /*внешние отступы*/
+    padding: 0; /*внутренние отступы*/
+    background: url("images/background.jpg"), rgba(255,255,255,0.7);
+    background-blend-mode: color;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    text-align: center;
+}
+.main_container{
+    background-color: rgba(238, 151, 11, 0.1);
+    display: flex;
+}
+.task_title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.task_box{
+    text-align: center;
+    flex: 1.5;
+    margin: 10px;
+    background-color: rgba(12, 240, 114, 0.5);
+}
+.site_box{
+    position: relative; /*Элемент используется как родитель для абсолютного позиционирования*/
+    flex: 10;
+    margin: 10px;
+    background-color: rgba(255, 255, 255);
+}
+.block-txt{
+    margin: 7px 7px 7px 7px; 
+    margin-top: 40px; 
+    font-size: 25px;
+    font-weight: 500;
+}
+.box-image{
+    width: 150px;
+    height: 150px;
+    float:right; /* Выравнивание по левому краю и обтекание слева*/
+    margin: 7px 7px 0px 7px; /* Отступы вокруг картинки */
+}
+.html-block{
+    background: url("images/html5.jpg"), rgba(255,255,255,0.85);
+    background-blend-mode: color;/* Комбинирование фона с цветом */
+    background-size: contain;
+}
+.css-block{
+    background: url("images/css.jpg"), rgba(255, 255, 255, 0.85);
+    background-blend-mode: color;
+    background-size: contain;
+}
+.js-block{
+    background: url("images/JS.jpg"), rgba(255, 255, 255, 0.85);
+    background-blend-mode: color;
+    background-size: contain;
+}
+.add-image{
+    float: right;
+}
+.sputnik-img{
+    width: 250px;
+    height: 230px;
+}
+.desc-img{
+    font-style: italic; /*Тип шрифта*/
+    font-size: 15px; /*Размер шрифта*/
+}
+.stepik-link{
+    position: absolute; /*Располагаем элемент относительно родителя*/
+    right: 10px;
+    top: 10px;
+
+}
