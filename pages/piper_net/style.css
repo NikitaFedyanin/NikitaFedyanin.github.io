@@ -85,10 +85,10 @@ body{
 }
 .subteam{
     display: flex;
+    justify-content: space-around;
     margin-top: 2.5em;
 }
 .empl{
-    flex: auto;
     text-align: center;
 }
 .emp-name{

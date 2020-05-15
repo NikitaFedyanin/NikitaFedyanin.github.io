@@ -18,6 +18,7 @@ header{
 .task_title{
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 1em;
 }
 .task_box{
     text-align: center;
@@ -73,5 +74,23 @@ header{
     position: absolute; /*Располагаем элемент относительно родителя*/
     right: 10px;
     top: 10px;
+    font-weight: 300;
+    transition: font-wieght 0.3s erase-in;
 
+}
+.box-item{
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    width: 90%;
+    font-weight: 500;
+    background-color: rgb(11, 71, 184);
+    color: cornsilk;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-color: crimson;
+}
+.box-item:hover{
+    background-color: rgb(40, 108, 233);
+    cursor: pointer;
 }
